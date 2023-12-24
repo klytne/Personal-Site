@@ -1,0 +1,71 @@
+:root { /*used to define global variables*/
+    --background: white;
+    --text: black;
+    --regular: sans-serif;
+    --font: var(--regular);
+}
+
+
+body, html {
+    background: #dad7cd;
+    color: var(--text);
+    font-family: var(--font);
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 350px;
+    display: block;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+.info {
+    display: block;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+li {
+    line-height: 25px;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3 ease-in-out;
+}
+
+a:hover {
+    color: #fb6f92;
+}
+
+input {
+    margin: 4px;
+    width: 150px;
+    box-sizing: border-box; /* Only considers the width size and the other margin and padding is included in it without increasing it*/
+    padding: 4px 8px;
+    border: 1px solid black;
+    color: var(--text);
+    background: none;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: var(--text);
+}
+
+button {
+    margin: 4px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #588157;
+    color: var(--background);
+    font-weight: bold;
+    width: 160px;
+    box-sizing: border-box;
+    cursor: pointer; /*used to specify the type of cursor that should be displayed when the mouse pointer is over an element*/
+}
